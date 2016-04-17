@@ -4,7 +4,7 @@
 #include<string>
 using namespace std;
 int main(){
-	
+	// hardwood | map
 	map<string,int> tree;
 	int n;
 	char ss[35];

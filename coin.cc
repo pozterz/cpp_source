@@ -7,31 +7,24 @@ int main(){
 	
 	int n,tmp;
 	while(cin >> n){
-		int count = 0;
-		tmp = n;
-		int x = 0;
-		bool fr;
-		for(int i = 0; i < 5; i++){
-			n = tmp;
-			int yy = x;
-			fr = true;
-			for(int j = yy; j < 5; j++){
-				if(n-type[j] >= 0){
-					if(fr){
-						x = j;
-						fr = false;
-					}
-				//	if(n-type[j] >= 0)
-						n -= type[j];
-				//	cout << "ty" << type[j] << endl;
-					j-=1;
-				
-					cout << "---" << n << endl;
-					if( n == 0) count++;
-				}
+		int arr[n+1][5];
+
+		for(int i = 0; i < 5; i++) arr[0][i] = 1;
+
+		for(int i = 1; i < n+1; i++){
+			for(int j = 0; j < 5; j++){
+				int x = (i-type[j] >= 0)? arr[i-type[j]][j]:0;
+				int y = (j >= 1)? arr[i][j-1]:0;
+				arr[i][j] = x + y;
 			}
 		}
-		cout << count << endl;
+		for(int i = 1; i < n+1; i++){
+			for(int j = 0; j < 5; j++){
+			cout << arr[i][j] << " ";
+		}
+		cout << endl;
+	}
+		cout << arr[n][4] << endl;
 	}
 	return 0;
 }

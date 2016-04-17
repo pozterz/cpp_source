@@ -2,6 +2,7 @@
 #include<algorithm>
 #include<string>
 using namespace std;
+// LCS Longest Common Subsequence
 int A[1001][1001] = {0};
 int main(){
 	

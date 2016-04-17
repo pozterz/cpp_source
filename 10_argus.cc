@@ -3,7 +3,7 @@
 #include<sstream>
 #include<string>
 using namespace std;
-
+// argus || heap
 struct st{
 	int id;
 	int period;
@@ -20,7 +20,7 @@ struct st{
 
 int main(){
 	string s;
-	priority_queue<st, vector<st> ,greater<st> > q;
+	priority_queue<st, vector<st> ,greater<st> > q; // min heap
 
 	while(1){
 		getline(cin,s);
@@ -46,9 +46,6 @@ int main(){
 		st tmp;
 		tmp = q.top();
 		tmp.time += tmp.period;
-	//	cout << q.top().period << endl;
-	//	cout << q.top().time << endl;
-	//	cout << tmp.time << endl;
 		q.pop();
 		q.push(tmp);
 	}

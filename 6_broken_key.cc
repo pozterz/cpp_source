@@ -2,6 +2,7 @@
 #include<list>
 using namespace std;
 int main(){
+	// breoken keyboard | list
 	string s;
 	while(cin >> s){
 		list<char> ch;

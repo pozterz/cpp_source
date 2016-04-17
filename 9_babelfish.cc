@@ -4,7 +4,7 @@
 #include<sstream>
 using namespace std;
 int main(){
-	
+	// babelfish | map
 	map<string,string> m;
 	
 	while(1){

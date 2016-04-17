@@ -5,7 +5,7 @@
 using namespace std;
 
 int main(){
-	
+	// ferry loading 3 | queue
 	int tc;
 	cin >> tc;
 	while(tc--){

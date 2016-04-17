@@ -3,7 +3,7 @@
 #include<string>
 #include<sstream>
 using namespace std;
-
+ // potentiometers | Fenwick tree | binary index tree
 class Fwtree{
 	private:
 		vector<int> fw;

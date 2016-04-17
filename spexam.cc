@@ -4,7 +4,7 @@
 using namespace std;
 
 int main(){
-
+	// upper bound & lower bound
 	int n;
 	cin >> n;
 	map<double,string> m;

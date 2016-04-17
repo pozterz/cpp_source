@@ -16,12 +16,11 @@ int a[8][8] ={
 		{0,0,1,0,0,1,0,0},
 		{0,0,0,1,1,0,0,0},
 	};
-
+// bfs
 vector<bool> visited;
 vector<int> ans;
 queue<int> q;
 int bfs(int start){
-	
 	visited.assign(8,false);
 	q.push(start);
 	visited[start] = true;

@@ -3,6 +3,7 @@
 #include<algorithm>
 #define N 5
 using namespace std;
+// 0/1 Knapsack
 int knapsack(int x[N],int w[N],int W){
 	int Ans[N+1][W+1];
 	
